@@ -1,2 +1,8 @@
 # This file is machine-generated - editing it directly is not advised
 
+julia_version = "1.8.0"
+manifest_format = "2.0"
+project_hash = "0da61a0de1dffa9a971a513bf21d9f4a9d391a89"
+
+[[deps.Mmap]]
+uuid = "a63ad114-7e13-5084-954f-fe012c677804"

@@ -1,5 +1,5 @@
 module Plink
 
-# Write your package code here.
+include("plinkfile.jl")
 
 end

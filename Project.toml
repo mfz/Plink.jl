@@ -3,6 +3,9 @@ uuid = "8e743530-ef2a-4471-9413-80ce62f3d826"
 authors = ["mfz <zink.florian@gmail.com> and contributors"]
 version = "0.1.0"
 
+[deps]
+Mmap = "a63ad114-7e13-5084-954f-fe012c677804"
+
 [compat]
 julia = "1.8"
 
