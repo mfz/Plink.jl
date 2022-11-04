@@ -8,7 +8,11 @@ export Marker,
     nsamples,
     nmarkers,
     sample_index,
-    marker_index
+    marker_index,
+    gt_hom1,
+    gt_het,
+    gt_hom2,
+    gt_missing
 
 using Mmap
 
@@ -201,10 +205,10 @@ end
 #
 
 
-hom1(A1, A2) = .~(A1 .| A2) 
-het(A1, A2) = (.~A1) .& A2
-hom2(A1, A2) = A1 .& A2
-missing(A1, A2) = A1 .& (.~A2)
+gt_hom1(A1, A2) = .~(A1 .| A2) 
+gt_het(A1, A2) = (.~A1) .& A2
+gt_hom2(A1, A2) = A1 .& A2
+gt_missing(A1, A2) = A1 .& (.~A2)
 
 
 # generate .ped and .map files
